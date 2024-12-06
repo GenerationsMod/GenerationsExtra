@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "generations_modulename",
+  "id": "generationsextra",
   "version": "${version}",
-  "name": "Generations Module Name",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Generations Extra",
+  "description": "",
   "authors": [
     "Generations Development Team"
   ],
@@ -16,12 +16,12 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "generations.gg.generations.modulename.generationsmodulename.fabric.GenerationsModuleNameFabric"
+      "generations.gg.generations.generationsextra.fabric.GenerationsExtraFabric"
     ]
   },
   "mixins": [
-    "generations_modulename.mixins.json",
-    "generations_modulename-common.mixins.json"
+    "generationsextra.mixins.json",
+    "generationsextra-common.mixins.json"
   ],
   "depends": {
     "fabric": "*",

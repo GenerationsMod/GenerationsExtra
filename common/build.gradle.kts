@@ -5,7 +5,7 @@ architectury {
 
 val minecraftVersion = project.properties["minecraft_version"] as String
 
-loom.accessWidenerPath.set(file("src/main/resources/generations_modulename.accesswidener"))
+loom.accessWidenerPath.set(file("src/main/resources/generationsextra.accesswidener"))
 
 sourceSets.main.get().resources.srcDir("src/main/generated/resources")
 
@@ -14,7 +14,7 @@ dependencies {
     // Do NOT use other classes from fabric loader
     modImplementation("net.fabricmc:fabric-loader:${project.properties["fabric_loader_version"]}")
 
-    modCompileOnly("generations.gg.generations.core:Generations-Core-Common:${project.properties["generations-core_version"]}")
+    modCompileOnly("generations.gg.generations.core:Generations-Core-common:${project.properties["generations-core_version"]}")
 
     //Cobblemon
     modCompileOnly("com.cobblemon:mod:${project.properties["cobblemon_version"]}")
