@@ -2,10 +2,10 @@ import net.fabricmc.loom.api.LoomGradleExtensionAPI
 
 plugins {
     id("architectury-plugin") version "3.4-SNAPSHOT"
-    id("dev.architectury.loom") version "1.5-SNAPSHOT" apply false
+    id("dev.architectury.loom") version "1.9-SNAPSHOT" apply false
     idea
     java
-    kotlin("jvm") version "1.9.22"
+    kotlin("jvm") version "2.1.10"
 }
 
 val minecraftVersion = project.properties["minecraft_version"] as String
@@ -31,6 +31,8 @@ subprojects {
         maven("https://maven.parchmentmc.org")
     }
 
+    loom.silentMojangMappingsLicense()
+
     @Suppress("UnstableApiUsage")
     dependencies {
         "minecraft"("com.mojang:minecraft:$minecraftVersion")
@@ -41,7 +43,6 @@ subprojects {
 
         compileOnly("org.jetbrains:annotations:24.1.0")
     }
-    loom.silentMojangMappingsLicense()
 }
 
 allprojects {

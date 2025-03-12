@@ -29,6 +29,6 @@ side = "BOTH"
 [[dependencies.generationsextra]]
 modId = "generations_core"
 mandatory = true
-versionRange = "[4.1.1-Beta,)"
+versionRange = "[1.0.0,)"
 ordering = "BEFORE"
 side = "BOTH"
